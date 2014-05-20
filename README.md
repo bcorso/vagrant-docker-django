@@ -3,6 +3,8 @@ vagrant-docker-django
 
 A Vagrant setup for running a VM that is running Docker that is running Django.
 
+The purpose of this is to isolate the python/django developement environment much like you would with [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/) except with the ability to isolate everything, not just python.
+
 ## Requirements
 
 * [Vagrant](http://www.vagrantup.com/) version 1.6.0 or greater (for docker provisions)
