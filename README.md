@@ -28,10 +28,10 @@ Check the Vagrant and Docker files for more info
 * Vagrant installs:
   - ubuntu-trusty:latest
   - docker:latest
-  - shared folders at host = '.'
+  - shared folders at ```host = .```
 
 * Docker installs:
   - ubuntu-precise:latest
   - python-pip, libpq-dev, python-dev, django-toolbelt
-  - shared folders at host = './docker'
-  - django project at host = './docker/django  
+  - shared folders at ```host = ./docker```
+  - django project at ```host = ./docker/django```
