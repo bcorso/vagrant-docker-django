@@ -2,15 +2,23 @@
 #
 # VERSION 1.0
 
-# use the ubuntu base image provided by dotCloud
+# a light weight linux distro
 FROM ubuntu:precise
 
-MAINTAINER Brad Corso bcorso1@gmail.com
+MAINTAINER Brad Corso <bcorso1@gmail.com>
 
-# make sure the package repository is up to date
-Run apt-get update
+# update
+RUN apt-get update
+RUN apt-get upgrade -y
 
-# install the needed libraries
-Run apt-get install -y python-pip
-Run apt-get install -y libpq-dev python-dev
-Run pip install django-toolbelt
+# install dependencies
+RUN apt-get install -y python-pip
+RUN apt-get install -y python-dev
+RUN apt-get install -y build-essential
+RUN pip install Django==1.6.5
+
+# create data directory
+RUN mkdir /django
+
+# set directory for entrypoint
+WORKDIR /django
