@@ -27,3 +27,4 @@ docker run --rm -v /vagrant/django:/django bcorso/django django-admin.py startpr
 docker run -d -v /vagrant/django:/django -p 8000:8000 bcorso/django myproj/manage.py runserver 0.0.0.0:8000
 ```
 
+Done! Now just checkout the result on [localhost:8888](http://localhost:8888)
