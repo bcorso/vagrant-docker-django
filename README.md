@@ -5,7 +5,7 @@ A Vagrant setup for running a VM that is running Docker that is running Django.
 
 ## Requirements
 
-* [Vagrant](http://www.vagrantup.com/) version 1.2.0 or greater.
+* [Vagrant](http://www.vagrantup.com/) version 1.6.0 or greater (for docker provisions)
 * [Virtualbox](https://www.virtualbox.org)
 
 ## Usage
